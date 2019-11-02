@@ -3,6 +3,7 @@ body {
    padding: 0;
    line-height: 180%;
    font-family: 'Niramit', sans-serif;
+   position: relative;
 
 }
 .clear {
@@ -17,6 +18,11 @@ body {
     font-size: 20px;
     overflow: hidden;
     background: #fdf2f7;
+    position: fixed;
+    transition: top 0.3s;
+    top: -100px;
+    left: 0;
+    right: 0;
 }
 .navbar-left {
     float: left;
@@ -75,7 +81,7 @@ img {
     /* background: #fdf2f7; */
     overflow: hidden;
 }
-.row-about {
+.row-about, .row-skills {
     font-size: 20px;
     max-width: 1000px;
     overflow: hidden;
@@ -83,16 +89,38 @@ img {
     margin: 0 auto;
 }
 
+/* skills */
+.skill {
+    text-align: center;
+}
+.skills {
+    float: left;
+    text-align: center;
+    border: 1px solid gainsboro;
+    width: 30%;
+    margin: 0 auto;
+}
+.skills p {
+    font-size: 70px;
+    float: left;
+    color: rgb(63, 62, 62);
+    margin: 0 10px;
+}
+.skills img {
+    max-width: 70px;
+    margin: 0;
+}
+
 @media screen and (max-width: 980px){
     h1 {
         color: green;
-        font-size: 7vw;
+        font-size: 8vw;
     }
     h2 {
-        font-size: 4vw;
+        font-size: 5vw;
     }
     a {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     /* about me */
 }
@@ -109,13 +137,13 @@ img {
     }
     h1 {
         color: red;
-        font-size: 7.5vw;
+        font-size: 9vw;
     }
     h2 {
-        font-size: 4.5vw;
+        font-size: 5.5vw;
     }
     a {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     /* about me */
 }
@@ -129,13 +157,13 @@ img {
     }
     h1 {
         color: blue;
-        font-size: 8vw;
+        font-size: 10vw;
     }
     h2 {
-        font-size: 5.5vw;
+        font-size: 6.5vw;
     }
     a {
-        font-size: 4vw;
+        font-size: 4.5vw;
     }
     /* about me */
     img {
