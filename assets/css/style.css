@@ -70,6 +70,7 @@ img {
     border-radius: 10px;
 }
 .about {
+    text-align: left;
     margin: 20px;    
 }
 .about-me {
@@ -80,6 +81,7 @@ img {
     width: 100%;
     /* background: #fdf2f7; */
     overflow: hidden;
+    margin: 0 auto;
 }
 .row-about, .row-skills {
     font-size: 20px;
@@ -87,28 +89,26 @@ img {
     overflow: hidden;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
 }
 
 /* skills */
-.skill {
-    text-align: center;
-}
+
 .skills {
     float: left;
-    text-align: center;
-    border: 1px solid gainsboro;
     width: 30%;
-    margin: 0 auto;
+    border: 1px solid gainsboro;
+    margin: 1.5%;
 }
-.skills p {
+.skills i {
     font-size: 70px;
-    float: left;
     color: rgb(63, 62, 62);
-    margin: 0 10px;
+    margin: 0 5px;
 }
 .skills img {
-    max-width: 70px;
-    margin: 0;
+    width: 70px;
+    /* width: 100%; */
+    margin: 0 0 0 60px
 }
 
 @media screen and (max-width: 980px){
