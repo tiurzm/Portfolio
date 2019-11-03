@@ -20,6 +20,6 @@ $(".about").on("click", function(){
   });
   $(".contact").on("click", function(){
     $("html,body").animate({
-        scrollTop: $(".row-contact").offset().top},
+        scrollTop: $(".container-3").offset().top},
         "slow");
   });

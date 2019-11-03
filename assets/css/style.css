@@ -1,15 +1,14 @@
 body {
-   margin: 0;
-   padding: 0;
-   line-height: 180%;
-   font-family: 'Niramit', sans-serif;
-   position: relative;
-
+    margin: 0;
+    padding: 0;
+    line-height: 180%;
+    font-family: 'Niramit', sans-serif;
+    position: relative;
 }
 .clear {
-    clear: both;
+    clear: both; 
 }
-
+ 
 /* navbar */
 .navbar {
     max-width: 100%;
@@ -37,7 +36,7 @@ body {
     padding: 0;
     display: inline-block;
 }
-
+ 
 /* jumbotron */
 .jumbotron {
     margin: 0;
@@ -45,7 +44,7 @@ body {
     max-width: 100%;
     text-align: center;
     font-family: 'Lemonada', cursive;
-    background: linear-gradient(
+     background: linear-gradient(
         rgba(255, 255, 255, 0.4),
         rgba(255, 255, 255, 0.4)
         ), url(../images/cl.jpg)center center/ cover no-repeat; 
@@ -64,7 +63,7 @@ body {
 .icon:hover {
     color: palevioletred;
 }
-
+ 
 /* about me */
 .about-text{
     text-align: left;
@@ -78,7 +77,7 @@ body {
     width: 67.5%;
     border: 1px solid gainsboro;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+ 
 }
 .container-1, .container-2, .container-3{
     width: 100%;
@@ -100,10 +99,10 @@ body {
     margin: 50px auto;
     text-align: center;
 }
-
+ 
 /* skills */
 .fa-cogs {
-    font-size: 30px;
+    font-size: 30px; 
 }
 .skills {
     float: left;
@@ -119,12 +118,12 @@ body {
 .skills img {
     width: 65px;
 }
-
+ 
 /* project */
 .project {
     margin: 100px 20px;
     overflow: hidden;
-    text-align: center;
+    text-align: center; 
 }
 .project-images {
     float: left;
@@ -150,26 +149,52 @@ body {
     border: 1px solid #99badd;    ;
     padding: 10px 20px;
 }
-
+.costum {
+    margin-bottom: 0;
+}
+ 
 /* contact */
+input, textarea {
+    max-width: 700px;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: 15px;
+    background: transparent;
+    border-bottom: 1px solid black;
+    line-height:1.5;
+}
+/* cek the border bottom input */
+textarea {
+    height: 100px;
+    resize: none;
+    margin-top: 10px;
+}
+button {
+ 
+}
 .contact-form{
     text-align: left;
     margin: 20px;
+}
+form {
+    border: 1px solid red;
+    max-width: 100%;
+
 }
 .visitor {
     text-align: left;
     margin-left: 20px;
 }
-
 @media screen and (max-width: 980px){
-    h1 {
+    .my-name {
         color: green;
         font-size: 8vw;
     }
     .project-text a {
         color: green;
     }
-    h2 {
+    .my-job {
         font-size: 5vw;
     }
     .icon {
@@ -184,12 +209,12 @@ body {
     /* project */
     .project-text, .project-images {
         width: 45%;
-    }
-}
-
-@media screen and (max-width: 768px){
+    } 
+ }
+ 
+ @media screen and (max-width: 768px){
     .navbar {
-       font-size: 18px;
+        font-size: 18px;
     }
     .navbar-left {
         padding-left: 12px;
@@ -197,14 +222,14 @@ body {
     .navbar-right i {
         display: none;
     }
-    h1 {
+    .my-name {
         color: red;
         font-size: 9vw;
     }
     .project-text a {
         color: red;
     }
-    h2 {
+    .my-job {
         font-size: 5.5vw;
     }
     .icon {
@@ -224,27 +249,27 @@ body {
     .project-text, .project-images{
         margin: 0 10px;
     }
-}
-
-@media screen and (max-width: 640px){
+ }
+ 
+ @media screen and (max-width: 640px){
     .navbar-left {
         padding-left: 8px;
     }
     .navbar-right li {
         margin: 0 8px;
     }
-    h1 {
+    .my-name {
         color: blue;
-        font-size: 10vw;
+        font-size: 10.5vw;
     }
     .project-text a {
         color: blue;
     }
-    h2 {
-        font-size: 6.5vw;
+    .my-job {
+        font-size: 7vw;
     }
     .icon {
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
     /* about me */
     .my-photo {
@@ -270,7 +295,7 @@ body {
         margin-bottom: 50px;
     }
     .project-text, .project-images {
-       width: 95%;
+        width: 95%;
     }
     .project-images {
         margin-bottom: 20px;
@@ -279,5 +304,8 @@ body {
         .project-images { order: 1; }
         .project-text { order: 2;  
     }
-    
-}
+    .row-contact {
+        width: 95%;
+        border: 1px solid red;
+    }
+ }
