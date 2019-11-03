@@ -82,7 +82,6 @@ body {
 }
 .container-1, .container-2, .container-3{
     width: 100%;
-    /* background: #fdf2f7; */
     overflow: hidden;
     margin: 0 auto;
 }
@@ -202,6 +201,7 @@ button {
     font-size: 17px;
     padding: 8px;
     border-radius: 10px;
+    background: white;
     border: 1px solid black;
     margin-top: 10px;
 }
@@ -223,6 +223,10 @@ button {
     background: #fffffff0;
     border: 1px solid gainsboro;
     border-radius: 5px;
+}
+.your-name, .your-email, .your-message {
+    padding: 15px;
+    background: white;
 }
 /* footer */
 .footer {
@@ -260,7 +264,6 @@ button {
     /* contacy */
     .row-contact {
         width: 95%;
-        /* border: 1px solid red; */
     }
  }
  
@@ -348,7 +351,7 @@ button {
     }
     /* contact */
     input, textarea{
-        width: 95%;
+        width: 100%;
     }
     .visitor {
         width: 85%;
