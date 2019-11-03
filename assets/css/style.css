@@ -198,7 +198,8 @@ textarea {
     margin-top: 10px;
 }
 button {
-    font-size: 16px;
+    font-family: 'Niramit', sans-serif;
+    font-size: 17px;
     padding: 8px;
     border-radius: 10px;
     border: 1px solid black;
@@ -211,8 +212,7 @@ button {
     background-position: right;
 }
 .contact-form{
-    text-align: left;
-    margin: 20px;
+   margin-top: 0;
 }
 .visitor {
     text-align: left;
@@ -239,7 +239,6 @@ button {
 
 @media screen and (max-width: 980px){
     .my-name {
-        color: green;
         font-size: 8vw;
     }
     .my-job {
@@ -273,7 +272,6 @@ button {
         display: none;
     }
     .my-name {
-        color: red;
         font-size: 9vw;
     }
     .my-job {
@@ -307,7 +305,6 @@ button {
         margin-right: 8px;
     }
     .my-name {
-        color: blue;
         font-size: 10.5vw;
     }
     .my-job {
@@ -353,7 +350,7 @@ button {
     input, textarea{
         width: 95%;
     }
-    .contact-form, .visitor {
+    .visitor {
         width: 85%;
         margin-left: 10px;
         margin-right: 10px;
