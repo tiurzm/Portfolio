@@ -7,3 +7,19 @@ $(window).on("scroll", function() {
         $(".navbar").css("top", "0");
     }
 });
+
+$(".about").on("click", function(){
+    $("html,body").animate({
+        scrollTop: $(".container-1").offset().top},
+        "slow");
+  });
+  $(".projects").on("click", function(){
+    $("html,body").animate({
+        scrollTop: $(".container-2").offset().top},
+        "slow");
+  });
+  $(".contact").on("click", function(){
+    $("html,body").animate({
+        scrollTop: $(".row-contact").offset().top},
+        "slow");
+  });

@@ -50,51 +50,64 @@ body {
         rgba(255, 255, 255, 0.4)
         ), url(../images/cl.jpg)center center/ cover no-repeat; 
 }
-h1 {
+.my-name {
     font-size: 6vw;
     font-family: 'Lemonada', cursive;
 }
-h2 {
+.my-job {
     font-size: 3.5vw;
 }
-a {
+.icon {
     color: black;
     font-size: 2vw;
 }
+.icon:hover {
+    color: palevioletred;
+}
 
 /* about me */
+.about-text{
+    text-align: left;
+    margin: 20px;    
+}
+.about-me {
+    text-align: justify;
+    padding: 15px;
+    margin: 0 20px;
+    float: left;
+    width: 67.5%;
+    border: 1px solid gainsboro;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.container-1, .container-2, .container-3{
+    width: 100%;
+    /* background: #fdf2f7; */
+    overflow: hidden;
+    margin: 0 auto;
+}
 .my-photo {
     width: 200px;
     float: left;
     margin: 0 20px;
     border-radius: 10px;
 }
-.about {
-    text-align: left;
-    margin: 20px;    
-}
-.about-me {
-    text-align: justify;
-    margin: 0 20px;
-}
-.container{
-    width: 100%;
-    /* background: #fdf2f7; */
-    overflow: hidden;
-    margin: 0 auto;
-}
-.row-about, .row-skills {
+.row-about, .row-skills, .row-projects, .row-contact {
     font-size: 20px;
     max-width: 1000px;
     overflow: hidden;
     width: 100%;
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
 }
 
 /* skills */
+.fa-cogs {
+    font-size: 30px;
+}
 .skills {
     float: left;
+    max-width: 100%;
     width: 30%;
     /* border: 1px solid gainsboro; */
     margin: 1.5%;
@@ -107,18 +120,71 @@ a {
     width: 65px;
 }
 
+/* project */
+.project {
+    margin: 100px 20px;
+    overflow: hidden;
+    text-align: center;
+}
+.project-images {
+    float: left;
+    width: 400px;
+    margin: 0 15px;
+    border: 1px solid #99badd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.project-text {
+    float: left;
+    width: 50%;
+    margin: 0 15px;
+}
+.project-text a {
+    text-decoration: none;
+    color: black;
+}
+.project-text a:hover {
+    /* color: #99badd; */
+}
+.project-text p {
+    text-align: justify;
+    border: 1px solid #99badd;    ;
+    padding: 10px 20px;
+}
+
+/* contact */
+.contact-form{
+    text-align: left;
+    margin: 20px;
+}
+.visitor {
+    text-align: left;
+    margin-left: 20px;
+}
+
 @media screen and (max-width: 980px){
     h1 {
         color: green;
         font-size: 8vw;
     }
+    .project-text a {
+        color: green;
+    }
     h2 {
         font-size: 5vw;
     }
-    a {
+    .icon {
         font-size: 3.5vw;
     }
     /* about me */
+    .about-me{
+        width: 60%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* project */
+    .project-text, .project-images {
+        width: 45%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -135,13 +201,29 @@ a {
         color: red;
         font-size: 9vw;
     }
+    .project-text a {
+        color: red;
+    }
     h2 {
         font-size: 5.5vw;
     }
-    a {
+    .icon {
         font-size: 4vw;
     }
     /* about me */
+    .about-text {
+        margin-left: 15px;        
+    }
+    .about-me{
+        width: 56%;
+    }
+    .my-photo {
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+    .project-text, .project-images{
+        margin: 0 10px;
+    }
 }
 
 @media screen and (max-width: 640px){
@@ -155,10 +237,13 @@ a {
         color: blue;
         font-size: 10vw;
     }
+    .project-text a {
+        color: blue;
+    }
     h2 {
         font-size: 6.5vw;
     }
-    a {
+    .icon {
         font-size: 4.5vw;
     }
     /* about me */
@@ -166,14 +251,33 @@ a {
         width: 100%;
         margin: 0;
     }
-    .about {
+    .about-text {
         margin-left: 0;
     }
     .about-me {
-        width: 100%;
-        margin: 0;
+        width: 85%;
+        margin-top: 20px;
     }
-    .row-about {
+    .row-about, .row-skills{
         width: 85%;
     }
+    .skills {
+        width: 100%;
+    }
+    /* project */
+    .project {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .project-text, .project-images {
+       width: 95%;
+    }
+    .project-images {
+        margin-bottom: 20px;
+    }
+    .order { display: flex; flex-flow: column; }
+        .project-images { order: 1; }
+        .project-text { order: 2;  
+    }
+    
 }

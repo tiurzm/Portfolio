@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Lemonada|Niramit&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
 </head>
 <body>
@@ -26,50 +26,131 @@
         </div>
     </div>
     <div class="clear"></div>
+
     <!-- Jumbotron -->
     <div class="jumbotron">
-        <h1>Tiur Mawaddah<h1>
-        <h2>Front End Developer</h2>
-        <a href="mailto:tiurzm@gmail.com"><i class="fab fa-google"></i></a>
-        <a href="https://www.linkedin.com/in/tiur-mawaddah-9b1a60129/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/tiurzm"><i class="fab fa-github"></i></a>
+        <p class="my-name">Tiur Mawaddah</p>
+        <p class="my-job">Front End Developer</p>
+        <a href="mailto:tiurzm@gmail.com"><i class="fab fa-google icon"></i></a>
+        <a href="https://www.linkedin.com/in/tiur-mawaddah-9b1a60129/"><i class="fab fa-linkedin icon"></i></a>
+        <a href="https://github.com/tiurzm"><i class="fab fa-github icon"></i></a>
     </div>
     <div class="clear"></div>
-    <div class="container">
-        <!-- About me -->
-        <div class="row-about">
-            <h3 class="about">About</h3>
+
+    <!-- About me -->
+    <div class="container-1">
+        <div class="row-about" data-aos="fade-up">
+            <h2 class="about-text">About</h2>
             <div class="clear"></div>
             <img class="my-photo" src="./assets/images/foto.jpg" alt="">
             <p class="about-me">My name is Tiur Mawaddah, you can call me Tiur. I was born in Jakarta, Indonesia. I am 25 years old and I graduated from University of Indonesia with a bachelor's degree in Humanities. I worked as a Kindergarten Teacher when I was in Indonesia. On 2018, I moved to Kansas, United States to live with my husband. Right now, I work as Grocery Stocker at Hen House and am a student of KU Bootcamp Coding 2019-2020.</p>
         </div>
         <!-- skill -->
-        <div class="row-skills">
-            <h3 class="skill">Skills</h3>
+        <div class="clear"></div>
+        <div class="row-skills" data-aos="fade-up">
+            <h2 class="skill">Skills</h2>
             <div class="skills">
                 <h3>Languages</h3>
-                <i class="fab fa-html5 icon"></i>
-                <i class="fab fa-css3-alt icon"></i>
-                <i class="fab fa-js-square icon"></i>
+                <i class="fab fa-html5"></i>
+                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-js-square"></i>
             </div>
             <div class="skills">
                 <h3>Framework</h3>
-                <i class="fab fa-bootstrap icon"></i>
+                <i class="fab fa-bootstrap"></i>
                 <img src="./assets/images/jq.png" alt=""/> 
             </div>
             <div class="skills">
                 <h3>Tools</h3>
-                <i class="fab fa-github icon"></i>
+                <i class="fab fa-github"></i>
                 <img src="./assets/images/vs.png" alt="">
             </div>   
         </div>
     </div>
-    <!-- projects -->
-    <div class="container">
-       
-    </div>
+    <div class="clear"></div>
 
+    <!-- projects -->
+    <div class="container-2">
+        <div class="row-projects">
+            <h2 data-aos="zoom-in">Projects</h2>
+            <div class="project" data-aos="fade-up">
+                <img src="./assets/images/wd.png" alt="" class="project-images">
+                <div class="project-text">
+                    <a href="https://tiurzm.github.io/Word-Guess-Game/">Word Guess Anime</a>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="project order" data-aos="fade-up">
+                <!-- number 2 when hit small -->
+                <div class="project-text">
+                    <a href="https://tiurzm.github.io/Giphy/">Giphy Disney</a>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+                <!-- number 1 when hit small -->
+                <img src="./assets/images/gp.png" alt="" class="project-images">
+            </div>
+            <div class="clear"></div>
+            <div class=" project" data-aos="fade-up">
+                <img src="./assets/images/ttg.png" alt="" class="project-images">
+                <div class="project-text">
+                    <a href="https://tiurzm.github.io/Trivia-Game/">Trivia Game Disney</a>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="project order" data-aos="fade-up">
+                <div class="project-text">
+                    <!-- number 2 when hit small -->
+                    <a href="https://tiurzm.github.io/Unit-4-Game/">Crystall Collector</a>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+                <!-- number 1 when hit small -->
+                <img src="./assets/images/cr.png" alt="" class="project-images">
+            </div>
+            <div class="clear"></div>
+            <div class="project" data-aos="fade-up">
+                <img src="./assets/images/tr.png" alt="" class="project-images">
+                <div class="project-text">
+                    <a href="https://tiurzm.github.io/Train-Time/">Train Time</a>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="container-3">
+        <div class="row-contact" data-aos="fade-up">
+            <h2 class="contact-form">Contact</h2>
+            <form class="visitor">
+                <div class="name">
+                    <label for="name">Name</label> <br>
+                    <input type="text" name="name" id="name" placeholder="Tiur Mawaddah" required>
+                </div>
+                <div class="col-email">
+                    <label for="email">Email</label> <br>
+                    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                </div>
+                <div class="clear"></div>
+                <div class="col-message">
+                    <label for="message">Message</label> <br>
+                    <textarea name="message" id="message" placeholder="comment" required></textarea>
+                </div>
+                <button class="comment">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    <!-- Firebase Core JavaScript Link -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <!-- Specific Firebase products we want (Database) -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script text="text/javascript" src="./assets/javascript/javascript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
