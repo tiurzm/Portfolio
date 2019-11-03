@@ -25,14 +25,14 @@ body {
 }
 .navbar-left {
     float: left;
-    padding: 20px;
+    padding: 20px 15px;
 }
 .navbar-right {
     float: right;
 }
 .navbar-right li {
     list-style-type: none;
-    margin: 0 10px;
+    margin-right: 10px;
     padding: 0;
     display: inline-block;
 }
@@ -61,7 +61,7 @@ body {
     font-size: 2vw;
 }
 .icon:hover {
-    color: palevioletred;
+    color: rgb(228, 47, 107);
 }
  
 /* about me */
@@ -108,8 +108,8 @@ body {
     float: left;
     max-width: 100%;
     width: 30%;
-    /* border: 1px solid gainsboro; */
     margin: 1.5%;
+    padding-bottom: 100px;
 }
 .skills i {
     font-size: 70px;
@@ -118,7 +118,34 @@ body {
 .skills img {
     width: 65px;
 }
- 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltiptext {
+    font-family: 'Niramit', sans-serif;
+    font-size: 20px;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: white;
+    border: 1px solid black;
+    color:black;
+    text-align: center;
+    border-radius: 5px;
+    padding:5px;
+    top: 100%;
+    left: 50%;
+    margin-left:-60px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 /* project */
 .project {
     margin: 100px 20px;
@@ -142,7 +169,7 @@ body {
     color: black;
 }
 .project-text a:hover {
-    /* color: #99badd; */
+    color: #99badd;
 }
 .project-text p {
     text-align: justify;
@@ -155,7 +182,7 @@ body {
  
 /* contact */
 input, textarea {
-    max-width: 700px;
+    max-width: 450px;
     width: 100%;
     border: 0;
     outline: 0;
@@ -171,21 +198,32 @@ textarea {
     margin-top: 10px;
 }
 button {
- 
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
 }
 .contact-form{
     text-align: left;
     margin: 20px;
 }
-form {
-    border: 1px solid red;
-    max-width: 100%;
-
-}
 .visitor {
     text-align: left;
     margin-left: 20px;
+    max-width: 100%;
 }
+/* footer */
+.footer {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-size: 18.5px;
+    padding: 15px;
+    background: #fdf2f7;
+
+}
+
 @media screen and (max-width: 980px){
     .my-name {
         color: green;
@@ -209,15 +247,17 @@ form {
     /* project */
     .project-text, .project-images {
         width: 45%;
-    } 
+    }
+    /* contacy */
+    .row-contact {
+        width: 95%;
+        /* border: 1px solid red; */
+    }
  }
  
  @media screen and (max-width: 768px){
     .navbar {
         font-size: 18px;
-    }
-    .navbar-left {
-        padding-left: 12px;
     }
     .navbar-right i {
         display: none;
@@ -246,6 +286,7 @@ form {
         margin-left: 15px;
         margin-right: 5px;
     }
+    /* ptoject */
     .project-text, .project-images{
         margin: 0 10px;
     }
@@ -256,7 +297,7 @@ form {
         padding-left: 8px;
     }
     .navbar-right li {
-        margin: 0 8px;
+        margin-right: 8px;
     }
     .my-name {
         color: blue;
@@ -287,7 +328,7 @@ form {
         width: 85%;
     }
     .skills {
-        width: 100%;
+        width: 96%;
     }
     /* project */
     .project {
@@ -304,8 +345,12 @@ form {
         .project-images { order: 1; }
         .project-text { order: 2;  
     }
-    .row-contact {
+    /* contact */
+    input, textarea{
         width: 95%;
-        border: 1px solid red;
+    }
+    .contact-form, .visitor {
+        margin-left: 10px;
+        margin-right: 10px;
     }
  }
