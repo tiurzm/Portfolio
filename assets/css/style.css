@@ -60,10 +60,11 @@ body {
     color: black;
     font-size: 2vw;
 }
-.icon:hover {
-    color: rgb(228, 47, 107);
+.icon:hover, .project-text a:hover {
+    /* color: rgb(228, 47, 107); */
+    color: #007bff;
 }
- 
+
 /* about me */
 .about-text{
     text-align: left;
@@ -129,7 +130,7 @@ body {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 100px;
-    background-color: white;
+    background: white;
     border: 1px solid black;
     color:black;
     text-align: center;
@@ -147,6 +148,9 @@ body {
 }
 
 /* project */
+.container-2 {
+    background: #fdf2f7;
+}
 .project {
     margin: 100px 20px;
     overflow: hidden;
@@ -168,12 +172,9 @@ body {
     text-decoration: none;
     color: black;
 }
-.project-text a:hover {
-    color: #99badd;
-}
 .project-text p {
     text-align: justify;
-    border: 1px solid #99badd;    ;
+    border: 1px solid #99badd;
     padding: 10px 20px;
 }
 .costum {
@@ -191,7 +192,6 @@ input, textarea {
     border-bottom: 1px solid black;
     line-height:1.5;
 }
-/* cek the border bottom input */
 textarea {
     height: 100px;
     resize: none;
@@ -202,7 +202,13 @@ button {
     padding: 8px;
     border-radius: 10px;
     border: 1px solid black;
-    margin: 10px 0;
+    margin-top: 10px;
+}
+.container-3 {
+    background: url(../images/cp.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
 }
 .contact-form{
     text-align: left;
@@ -211,26 +217,30 @@ button {
 .visitor {
     text-align: left;
     margin-left: 20px;
-    max-width: 100%;
+    padding: 20px;
+    max-width: 465px;
+    width: 100%;
+    background: #fffffff0;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
 }
 /* footer */
 .footer {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     text-align: center;
-    font-size: 18.5px;
+    font-size: 17px;
     padding: 15px;
     background: #fdf2f7;
-
+}
+.footer p {
+    margin: 0;
 }
 
 @media screen and (max-width: 980px){
     .my-name {
         color: green;
         font-size: 8vw;
-    }
-    .project-text a {
-        color: green;
     }
     .my-job {
         font-size: 5vw;
@@ -266,9 +276,6 @@ button {
         color: red;
         font-size: 9vw;
     }
-    .project-text a {
-        color: red;
-    }
     .my-job {
         font-size: 5.5vw;
     }
@@ -302,9 +309,6 @@ button {
     .my-name {
         color: blue;
         font-size: 10.5vw;
-    }
-    .project-text a {
-        color: blue;
     }
     .my-job {
         font-size: 7vw;
@@ -350,6 +354,7 @@ button {
         width: 95%;
     }
     .contact-form, .visitor {
+        width: 85%;
         margin-left: 10px;
         margin-right: 10px;
     }
