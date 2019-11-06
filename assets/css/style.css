@@ -22,6 +22,9 @@ body {
     top: -100px;
     left: 0;
     right: 0;
+    /* make the navbar covers everything */
+    z-index: 1;
+
 }
 .navbar-left {
     float: left;
