@@ -91,7 +91,7 @@ body {
     margin: 0 20px;
     border-radius: 10px;
 }
-.row-about, .row-skills, .row-projects, .row-contact {
+.row-about, .row-skills, .row-projects, .row-download {
     font-size: 20px;
     max-width: 1000px;
     overflow: hidden;
@@ -181,6 +181,13 @@ body {
 }
  
 /* contact */
+.row-contact {
+    font-size: 20px;
+    max-width: 1000px;
+    overflow: hidden;
+    width: 100%;
+    margin: 50px auto;
+}
 input, textarea {
     max-width: 450px;
     width: 100%;
@@ -227,6 +234,13 @@ button {
 .your-name, .your-email, .your-message {
     padding: 15px;
     background: white;
+}
+.download {
+    margin-left: 20px;    
+}
+.download a {
+    text-decoration: none;
+    color: black;
 }
 /* footer */
 .footer {
