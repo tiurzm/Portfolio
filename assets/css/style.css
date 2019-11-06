@@ -372,4 +372,7 @@ button {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .download {
+        margin-left: 15px;    
+    }
  }
