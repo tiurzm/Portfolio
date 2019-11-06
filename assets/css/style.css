@@ -28,14 +28,14 @@ body {
 }
 .navbar-left {
     float: left;
-    padding: 20px 15px;
+    padding: 20px;
 }
 .navbar-right {
     float: right;
 }
 .navbar-right li {
     list-style-type: none;
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 0;
     display: inline-block;
 }
@@ -245,6 +245,11 @@ button {
     text-decoration: none;
     color: black;
 }
+.error {
+    font-size: 16px;
+    color: red;
+}
+
 /* footer */
 .footer {
     border-top: 1px solid black;
@@ -319,10 +324,10 @@ button {
  
  @media screen and (max-width: 640px){
     .navbar-left {
-        padding-left: 8px;
+        padding-left: 10px;
     }
     .navbar-right li {
-        margin-right: 8px;
+        margin-right: 10px;
     }
     .my-name {
         font-size: 10.5vw;

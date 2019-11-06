@@ -43,25 +43,41 @@ var config = {
   firebase.initializeApp(config);
   var database = firebase.database();
   
-  $(".comment").on("click", function(event){
-    event.preventDefault();
-    var name = $("#name").val();
-    var email  = $("#email").val();
-    var comment = $("#message").val();
-    console.log(name);
-    console.log(email);
-    console.log(comment);
+$(function() {
+    $(".visitor").validate({
+      rules: {
+        name: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        message: "required",
+      },
+      // Specify validation error messages
+      messages: {
+        name: "Please enter your firstname",
+        email: "Please enter a valid email address",
+        message: "Please enter your message"    
+      },
+      submitHandler: function(form) {
+        var name = $("#name").val();
+        var email  = $("#email").val();
+        var comment = $("#message").val();
+        console.log(name);
+        console.log(email);
+        console.log(comment);
     
-    var newCall = {
-      name: name,
-      email: email,
-      message: comment, 
-    }
-    database.ref().push(newCall);
-  
-    $("#name").val("");
-    $("#email").val("");
-    $("#message").val("");
-  });
+        var newCall = {
+          name: name,
+          email: email,
+          message: comment, 
+        }
+        database.ref().push(newCall);
+        $("#name").val("");
+        $("#email").val("");
+        $("#message").val("");
+      }
+    });
+});
 
     
