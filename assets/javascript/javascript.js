@@ -55,7 +55,7 @@ $(function() {
       },
       // Specify validation error messages
       messages: {
-        name: "Please enter your firstname",
+        name: "Please enter your name",
         email: "Please enter a valid email address",
         message: "Please enter your message"    
       },
