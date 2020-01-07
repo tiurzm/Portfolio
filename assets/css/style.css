@@ -92,7 +92,7 @@ body {
     margin: 0 20px;
     float: left;
     width: 67.5%;
-    border: 1px solid rgb(32, 1, 49);
+    border: 1px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .container-1, .container-2, .container-3{
@@ -193,7 +193,7 @@ body {
 .project-images {
     max-width: 400px;
     width: 100%;
-    border: 1px solid rgb(32, 1, 49);
+    border: 1px solid gainsboro;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .project-1, .project-3, .project-5 {
@@ -227,7 +227,7 @@ body {
 }
 .project-text p {
     text-align: justify;
-    border: 1px solid rgb(32, 1, 49);
+    border: 1px solid black;
     padding: 10px 20px;
 }
  
@@ -246,7 +246,7 @@ input, textarea {
     outline: 0;
     font-size: 17px;
     padding: 3px;
-    border-bottom: 1px solid rgb(32, 1, 49);
+    border-bottom: 1px solid black;
     line-height:1.5;
 }
 textarea {
@@ -259,7 +259,7 @@ button {
     font-size: 17px;
     padding: 8px;
     border-radius: 10px;
-    border: 1px solid rgb(32, 1, 49);
+    border: 1px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -282,7 +282,7 @@ button {
     max-width: 465px;
     width: 100%;
     background: #fffffff0;
-    border: 1px solid rgb(32, 1, 49);
+    border: 1px solid black;
     border-radius: 5px;
 }
 .your-name, .your-email, .your-message {
