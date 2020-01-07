@@ -12,11 +12,11 @@ body {
 /* navbar */
 .navbar {
     max-width: 100%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(32, 1, 49);
+    border-bottom: 1px solid rgb(32, 1, 49);
     font-size: 20px;
     overflow: hidden;
-    background: #fdf2f7;
+    background: white;
     position: fixed;
     transition: top 0.3s;
     top: -100px;
@@ -39,32 +39,45 @@ body {
     padding: 0;
     display: inline-block;
 }
+.box {
+    background: #fffffff0;
+    max-width: 850px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: rgb(32, 1, 49);
+}
  
 /* jumbotron */
 .jumbotron {
     margin: 0;
-    padding: 250px 0;
+    padding: 300px 0;
     max-width: 100%;
     text-align: center;
     font-family: 'Lemonada', cursive;
-     background: linear-gradient(
-        rgba(255, 255, 255, 0.4),
-        rgba(255, 255, 255, 0.4)
-        ), url(../images/cl.jpg)center center/ cover no-repeat; 
+    background: url(../images/wb.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 .my-name {
     font-size: 6vw;
     font-family: 'Lemonada', cursive;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .my-job {
     font-size: 3.5vw;
+    margin-top: 60px;
+    margin-bottom: 40px;
 }
 .icon {
-    color: black;
+    color: rgb(32, 1, 49);
     font-size: 2vw;
+    margin-bottom: 30px;
 }
 .icon:hover, .project-text a:hover {
-    /* color: rgb(228, 47, 107); */
     color: #007bff;
 }
 
@@ -79,9 +92,8 @@ body {
     margin: 0 20px;
     float: left;
     width: 67.5%;
-    border: 1px solid gainsboro;
+    border: 1px solid rgb(32, 1, 49);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- 
 }
 .container-1, .container-2, .container-3{
     width: 100%;
@@ -91,28 +103,36 @@ body {
 .my-photo {
     width: 200px;
     float: left;
-    margin: 0 20px;
+    margin: 0 20px 10px;
     border-radius: 10px;
 }
-.row-about, .row-skills, .row-projects, .row-download {
+.row-about, .row-download {
     font-size: 20px;
     max-width: 1000px;
     overflow: hidden;
     width: 100%;
-    margin: 50px auto;
+    margin: 60px auto 10px;
+}
+
+/* skills */
+.row-skills{
+    font-size: 20px;
+    max-width: 1000px;
+    overflow: hidden;
+    width: 100%;
+    margin: 10px auto 10px;
     text-align: center;
 }
- 
-/* skills */
 .fa-cogs {
     font-size: 30px; 
 }
+
 .skills {
     float: left;
     max-width: 100%;
-    width: 30%;
-    margin: 1.5%;
-    padding-bottom: 100px;
+    width: 20%;
+    margin: 23.1px;
+    padding-bottom: 30px;
 }
 .skills i {
     font-size: 70px;
@@ -121,6 +141,7 @@ body {
 .skills img {
     width: 65px;
 }
+
 .tooltip {
     position: relative;
     display: inline-block;
@@ -145,38 +166,69 @@ body {
     position: absolute;
     z-index: 1;
 }
+#long-text {
+    width: 180px;
+}
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
+#mysql {
+    max-width: 100px;
+    width: 100%;
+    opacity: 0.9;
+}
 
 /* project */
-.container-2 {
-    background: #fdf2f7;
-}
-.project {
-    margin: 100px 20px;
+.row-projects {
+    font-size: 20px;
+    max-width: 1200px;
     overflow: hidden;
-    text-align: center; 
+    width: 100%;
+    margin:60px auto;
+}
+.h2-project {
+    text-align: center;
+    margin-bottom: 50px;
 }
 .project-images {
-    float: left;
-    width: 400px;
-    margin: 0 15px;
-    border: 1px solid #99badd;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid rgb(32, 1, 49);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.project-text {
+.project-1, .project-3, .project-5 {
     float: left;
     width: 50%;
-    margin: 0 15px;
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+    height: 600px;
+    overflow: hidden;
+    /* border: 1px solid brown; */
+} 
+.project-2, .project-4, .project-6 {
+    float: right;
+    width: 45%;
+    margin: 50px auto;
+    padding: 0;
+    text-align: center;
+    height: 600px;
+    overflow: hidden;
+    /* border: 1px solid brown; */
+} 
+.project-text {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
 }
 .project-text a {
     text-decoration: none;
     color: black;
+    /* text-align: center; */
 }
 .project-text p {
     text-align: justify;
-    border: 1px solid #99badd;
+    border: 1px solid rgb(32, 1, 49);
     padding: 10px 20px;
 }
 .costum {
@@ -189,7 +241,7 @@ body {
     max-width: 1000px;
     overflow: hidden;
     width: 100%;
-    margin: 50px auto;
+    margin: 60px auto;
 }
 input, textarea {
     max-width: 450px;
@@ -198,7 +250,7 @@ input, textarea {
     outline: 0;
     font-size: 17px;
     padding: 3px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(32, 1, 49);
     line-height:1.5;
 }
 textarea {
@@ -211,9 +263,9 @@ button {
     font-size: 17px;
     padding: 8px;
     border-radius: 10px;
-    background: white;
-    border: 1px solid black;
+    border: 1px solid rgb(32, 1, 49);
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .container-3 {
     background: url(../images/cp.png);
@@ -222,24 +274,26 @@ button {
     background-position: right;
 }
 .contact-form{
-   margin-top: 10px;
+   margin-top: 5px;
    margin-bottom: 10px;
    padding-left: 15px;
 }
 .visitor {
     text-align: left;
     margin-left: 20px;
+    margin-top: 20px;
     padding: 20px;
     max-width: 465px;
     width: 100%;
     background: #fffffff0;
-    border: 1px solid gainsboro;
+    border: 1px solid rgb(32, 1, 49);
     border-radius: 5px;
 }
 .your-name, .your-email, .your-message {
     padding: 15px;
     background: white;
 }
+
 .download {
     margin-left: 20px;    
 }
@@ -254,12 +308,12 @@ button {
 
 /* footer */
 .footer {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(32, 1, 49);
+    border-bottom: 1px solid rgb(32, 1, 49);
     text-align: center;
     font-size: 17px;
     padding: 15px;
-    background: #fdf2f7;
+    background: white;
 }
 .footer p {
     margin: 0;
@@ -281,11 +335,23 @@ button {
         margin-left: 10px;
         margin-right: 10px;
     }
-    /* project */
-    .project-text, .project-images {
-        width: 45%;
+    /* skills */
+    .skills {
+        max-width: 100%;
+        width: 20%;
+        margin: 17.5px;
     }
-    /* contacy */
+    /* project */
+    .row-projects {
+        width: 98%;
+    }
+    .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+        width: 49%;
+    }
+    .project-text, .project-images {
+        width: 90%;
+    }
+    /* contact */
     .row-contact {
         width: 95%;
     }
@@ -318,9 +384,16 @@ button {
         margin-left: 15px;
         margin-right: 5px;
     }
-    /* ptoject */
-    .project-text, .project-images{
-        margin: 0 10px;
+    /* skills */
+    .skills {
+        max-width: 100%;
+        width: 20%;
+        margin: 14px;
+    }
+    /* project */
+    .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+        width: 48%;
+        margin: 40px auto;
     }
  }
  
@@ -349,22 +422,26 @@ button {
         margin-left: 0;
     }
     .about-me {
-        width: 85%;
+        width: 87%;
         margin-top: 20px;
+        margin-bottom: 10px;
     }
     .row-about, .row-skills{
         width: 85%;
     }
     .skills {
-        width: 96%;
+        width: 92%;
     }
     /* project */
-    .project {
-        margin-top: 50px;
-        margin-bottom: 50px;
+    .row-projects {
+        width: 99%;
+    }
+    .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
+        width: 100%;
+        margin: 0 auto;
     }
     .project-text, .project-images {
-        width: 95%;
+        margin: 0 auto;
     }
     .project-images {
         margin-bottom: 20px;
@@ -373,12 +450,13 @@ button {
         .project-images { order: 1; }
         .project-text { order: 2;  
     }
+    
     /* contact */
     input, textarea{
         width: 100%;
     }
     .visitor {
-        width: 85%;
+        width: 84%;
         margin-left: 10px;
         margin-right: 10px;
     }
