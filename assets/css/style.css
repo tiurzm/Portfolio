@@ -4,6 +4,7 @@ body {
     line-height: 180%;
     font-family: 'Niramit', sans-serif;
     position: relative;
+    background: #fbfbfb;
 }
 .clear {
     clear: both; 
@@ -16,7 +17,7 @@ body {
     border-bottom: 1px solid rgb(32, 1, 49);
     font-size: 20px;
     overflow: hidden;
-    background: white;
+    background: #fbfbfb;
     position: fixed;
     transition: top 0.3s;
     top: -100px;
@@ -40,23 +41,21 @@ body {
     display: inline-block;
 }
 .box {
-    background: #fffffff0;
     max-width: 850px;
     width: 100%;
     overflow: hidden;
     margin: 0 auto;
     border-radius: 10px;
-    color: rgb(32, 1, 49);
 }
  
 /* jumbotron */
 .jumbotron {
     margin: 0;
-    padding: 300px 0;
+    padding: 200px 0 350px;
     max-width: 100%;
     text-align: center;
     font-family: 'Lemonada', cursive;
-    background: url(../images/wb.jpeg);
+    background: url(../images/bb.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -73,7 +72,7 @@ body {
     margin-bottom: 40px;
 }
 .icon {
-    color: rgb(32, 1, 49);
+    color: black;
     font-size: 2vw;
     margin-bottom: 30px;
 }
@@ -81,19 +80,17 @@ body {
     color: #007bff;
 }
 
-/* about me */
-.about-text{
-    text-align: left;
-    margin: 20px;    
-}
 .about-me {
     text-align: justify;
-    padding: 15px;
-    margin: 0 20px;
+    background: #fbfbfb;
+    padding-left: 30px;
     float: left;
-    width: 67.5%;
-    border: 1px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 55%;
+    width: 100%;
+    /* box-shadow: 0 4px 8px 0 rgba(31, 22, 22, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+.about-me h2 {
+    margin-top: 0;
 }
 .container-1, .container-2, .container-3{
     width: 100%;
@@ -101,9 +98,11 @@ body {
     margin: 0 auto;
 }
 .my-photo {
-    width: 200px;
+    max-width: 40%;
+    width: 100%;
     float: left;
-    margin: 0 20px 10px;
+    padding: 0;
+    margin: 0;
     border-radius: 10px;
 }
 .row-about, .row-download {
@@ -111,7 +110,7 @@ body {
     max-width: 1000px;
     overflow: hidden;
     width: 100%;
-    margin: 60px auto 10px;
+    margin: 80px auto 10px;
 }
 
 /* skills */
@@ -120,19 +119,24 @@ body {
     max-width: 1000px;
     overflow: hidden;
     width: 100%;
-    margin: 10px auto 10px;
+    margin: 30px auto 10px;
     text-align: center;
 }
 .fa-cogs {
     font-size: 30px; 
 }
 
+.fab {
+    margin: 0 5px;
+}
+
+.skill {
+    margin-bottom: 50px;
+}
+
 .skills {
-    float: left;
     max-width: 100%;
-    width: 20%;
-    margin: 23.1px;
-    padding-bottom: 30px;
+    height: 150px;
 }
 .skills i {
     font-size: 70px;
@@ -153,22 +157,20 @@ body {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 100px;
-    background: white;
+    background: #fbfbfb;
     border: 1px solid black;
     color:black;
     text-align: center;
     border-radius: 5px;
-    padding:5px;
+    padding:5px 0;
     top: 100%;
-    left: 50%;
+    left: 60%;
     margin-left:-60px;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
-#long-text {
-    width: 180px;
-}
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }
@@ -184,7 +186,7 @@ body {
     max-width: 1200px;
     overflow: hidden;
     width: 100%;
-    margin:60px auto;
+    margin: 60px auto;
 }
 .h2-project {
     text-align: center;
@@ -281,13 +283,13 @@ button {
     padding: 20px;
     max-width: 465px;
     width: 100%;
-    background: #fffffff0;
+    background: #fbfbfb;
     border: 1px solid black;
     border-radius: 5px;
 }
 .your-name, .your-email, .your-message {
     padding: 15px;
-    background: white;
+    background: #fbfbfb;
 }
 
 .download {
@@ -302,6 +304,9 @@ button {
     color: red;
 }
 
+#name, #email, #message {
+    background: #fbfbfb;
+}
 /* footer */
 .footer {
     border-top: 1px solid rgb(32, 1, 49);
@@ -325,18 +330,25 @@ button {
     .icon {
         font-size: 3.5vw;
     }
+    .my-photo {
+        max-width: 35%;
+        margin-left: 15px;
+    }
     /* about me */
     .about-me{
-        width: 60%;
-        margin-left: 10px;
-        margin-right: 10px;
+        max-width: 58%;
+        padding-right: 10px;
+        padding-left: 20px;
+        /* border: 1px solid red; */
     }
-    /* skills */
+    .fab {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
     .skills {
-        max-width: 100%;
-        width: 20%;
-        margin: 17.5px;
+        height: 210px;
     }
+
     /* project */
     .row-projects {
         width: 98%;
@@ -370,21 +382,9 @@ button {
         font-size: 4vw;
     }
     /* about me */
-    .about-text {
-        margin-left: 15px;        
-    }
     .about-me{
-        width: 56%;
-    }
-    .my-photo {
-        margin-left: 15px;
-        margin-right: 5px;
-    }
-    /* skills */
-    .skills {
-        max-width: 100%;
-        width: 20%;
-        margin: 14px;
+        max-width: 56%;
+        /* border: 1px solid purple; */
     }
     /* project */
     .project-1, .project-2, .project-3, .project-4, .project-5, .project-6 {
@@ -411,22 +411,25 @@ button {
     }
     /* about me */
     .my-photo {
-        width: 100%;
-        margin: 0;
-    }
-    .about-text {
-        margin-left: 0;
+        max-width: 92%;
     }
     .about-me {
-        width: 86%;
-        margin-top: 20px;
+        max-width: 92%;
+        margin-left: 10px;
+        margin-top: 25px;
         margin-bottom: 10px;
+        padding-left: 0;
+        /* border: 1px solid blue; */
     }
+    .about-me h2 {
+        text-align: center;
+    }
+
     .row-about, .row-skills{
         width: 85%;
     }
     .skills {
-        width: 92%;
+       height: 400px;
     }
     /* project */
     .row-projects {
