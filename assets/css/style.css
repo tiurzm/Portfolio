@@ -429,7 +429,9 @@ button {
         width: 85%;
     }
     .skills {
-       height: 400px;
+       height: 392px;
+       max-width: 88%;
+       margin-left: 20px;
     }
     /* project */
     .row-projects {
