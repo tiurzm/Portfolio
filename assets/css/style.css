@@ -162,7 +162,7 @@ body {
     color:black;
     text-align: center;
     border-radius: 5px;
-    padding:5px 0;
+    padding:5px;
     top: 100%;
     left: 60%;
     margin-left:-60px;
@@ -198,7 +198,7 @@ body {
     border: 1px solid gainsboro;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.project-1, .project-3, .project-5, .project-7{
+.project-1, .project-3, .project-5, .project-7, .project-9{
     float: left;
     width: 50%;
     margin: 50px auto;
@@ -208,7 +208,7 @@ body {
     overflow: hidden;
     /* border: 1px solid brown; */
 } 
-.project-2, .project-4, .project-6, .project-8 {
+.project-2, .project-4, .project-6, .project-8, .project-10 {
     float: right;
     width: 45%;
     margin: 50px auto;
@@ -353,7 +353,8 @@ button {
     .row-projects {
         width: 98%;
     }
-    .project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7, .project-8 {
+    .project-1, .project-2, .project-3, .project-4, .project-5, 
+    .project-6, .project-7, .project-8, .project-9, .project-10 {
         width: 49%;
     }
     .project-text, .project-images {
@@ -387,7 +388,8 @@ button {
         /* border: 1px solid purple; */
     }
     /* project */
-    .project-1, .project-2, .project-3, .project-4, .project-5, .project-6, .project-7, .project-8 {
+    .project-1, .project-2, .project-3, .project-4, .project-5, 
+    .project-6, .project-7, .project-8, .project-9, .project-10 {
         width: 48%;
         margin: 40px auto;
     }
@@ -438,7 +440,7 @@ button {
         width: 99%;
     }
     .project-1, .project-2, .project-3, .project-4, .project-5, .project-6, 
-    .project-7, .project-8 {
+    .project-7, .project-8, .project-9, .project-10 {
         width: 100%;
         margin: 0 auto;
     }
