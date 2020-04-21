@@ -204,7 +204,7 @@ body {
     margin: 50px auto;
     padding: 0;
     text-align: center;
-    height: 600px;
+    height: 650px;
     overflow: hidden;
     /* border: 1px solid brown; */
 } 
@@ -214,7 +214,7 @@ body {
     margin: 50px auto;
     padding: 0;
     text-align: center;
-    height: 600px;
+    height: 650px;
     overflow: hidden;
     /* border: 1px solid brown; */
 } 
@@ -227,12 +227,18 @@ body {
     text-decoration: none;
     color: black;
 }
-.project-text p {
+.explanation {
     text-align: justify;
     border: 1px solid black;
     padding: 10px 20px;
 }
  
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+}
 /* contact */
 .row-contact {
     font-size: 20px;
@@ -307,6 +313,19 @@ button {
 #name, #email, #message {
     background: #fbfbfb;
 }
+
+.my-contact {
+    float: right;
+    background: #fbfbfb;
+    margin: 25px;
+    border-radius: 10px;
+}
+
+.my-contact p {
+    margin: 10px 20px;
+    text-align: center;
+}
+
 /* footer */
 .footer {
     border-top: 1px solid rgb(32, 1, 49);
@@ -448,17 +467,17 @@ button {
         width: 100%;
         margin: 0 auto;
     }
-    .project-text, .project-images {
+    /* .project-text, .project-images {
         margin: 0 auto;
-    }
-    .project-images {
+    } */
+    /* .project-images {
         margin-bottom: 20px;
-    }
-    .order { display: flex; flex-flow: column; }
+    } */
+    /* .order { display: flex; flex-flow: column; }
         .project-images { order: 1; }
         .project-text { order: 2;  
     }
-    
+     */
     /* contact */
     input, textarea{
         width: 100%;
