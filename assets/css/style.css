@@ -394,6 +394,10 @@ button {
         margin: 40px auto;
     }
  }
+
+ #none:hover {
+     color: black;
+ }
  
  @media screen and (max-width: 640px){
     .navbar-left {
